@@ -1,0 +1,6 @@
+[user]
+	email = __EMAIL__
+	name = __NAME__
+[core]
+	pager = LESSCHARSET=utf-8 less
+	quotepath = false
