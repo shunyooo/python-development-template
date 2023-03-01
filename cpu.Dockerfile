@@ -11,6 +11,6 @@ COPY pyproject.toml poetry.lock /app/
 RUN poetry install --no-root --no-interaction
 
 # git settings
-# COPY .gitconfig /root/.gitconfig
+COPY .gitconfig /root/.gitconfig
 
 COPY . /app/
