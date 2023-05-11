@@ -6,6 +6,7 @@
 		"context": "..",
 		"dockerfile": "../cuda.Dockerfile"
 	},
+	// Delete below runArgs if not using gpu
 	"runArgs": [
 		"--gpus",
 		"all"
@@ -14,7 +15,7 @@
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
-	"postCreateCommand": "poetry install",
+	"postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
