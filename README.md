@@ -41,7 +41,6 @@ You may need to SSH in and perform initial setup, so connect with `gcloud comput
   - Set the user to your own account (Tip: it's a good idea to add it to the end of the config)
 
   ```
-  markdownCopy code
   Host *
       User your_name
   ```
