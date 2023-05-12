@@ -4,8 +4,6 @@ This is a template for Python development on Docker with VSCode.
 
 You can customize the details according to your own preference.
 
-
-
 # Features
 
 - Docker
@@ -14,8 +12,6 @@ You can customize the details according to your own preference.
 - Package management with Poetry
 - VScode
   - Optimized setup for Python development
-
-
 
 # QuickStart with GCP VM
 
@@ -55,12 +51,11 @@ Clone this repository:
 git clone https://github.com/shunyooo/python-development-template.git
 ```
 
-- Rewrite `.gitconfig`
 - Rewrite `devcontainer.json` depending on whether you use cpu or gpu
+- Login and configure gcloud and git on the host ( settings passed to container)
 
 ### 5. Access via devcontainer
 
 - If there is a .devcontainer in the current directory, a pop-up will appear.
 - Press the pop-up to start and attach the container. Alternatively, build from "Command Palette > Dev Containers: Rebuild…".
 - Once the build is complete, execute inside the container.
-

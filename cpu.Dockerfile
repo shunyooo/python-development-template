@@ -10,7 +10,4 @@ RUN pip install --no-cache-dir --upgrade pip==22.3.1 && \
 COPY pyproject.toml poetry.lock /app/
 RUN poetry install --no-root --no-interaction
 
-# git settings
-COPY .gitconfig /root/.gitconfig
-
 COPY . /app/
