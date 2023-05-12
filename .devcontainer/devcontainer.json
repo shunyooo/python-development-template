@@ -6,6 +6,10 @@
 		"context": "..",
 		"dockerfile": "../cuda.Dockerfile"
 	},
+	"mounts": [
+		// Mount the local gcloud config folder to the container
+		"source=${localEnv:HOME}/.config/gcloud/,target=/root/.config/gcloud/,type=bind,consistency=cached"
+	],
 	// Delete below runArgs if not using gpu
 	"runArgs": [
 		"--gpus",
