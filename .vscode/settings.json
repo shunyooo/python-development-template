@@ -9,6 +9,7 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/.ipynb_checkpoints/**": true,
+    "**/.venv/**": true,
   },
   // runnable settings
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
